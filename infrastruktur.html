@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infrastruktur</title>
+    <style>
+      /* --- Global & Body Styles --- */
+      body {
+        width: 100%;
+        min-height: 100vh;
+        font-family: Verdana, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* Pseudo-element untuk gambar latar belakang blur */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/bcan.png); /* Menggunakan gambar yang sama untuk konsistensi */
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px);
+        z-index: -1;
+      }
+
+      /* --- Navigation Bar (Sticky) --- */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #f16b22;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+      }
+
+      nav .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      nav .logo img {
+        width: 50px;
+        height: auto;
+      }
+
+      nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+        border-radius: 5px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        transform: translateY(-3px);
+      }
+      
+      /* --- Main Content Container --- */
+      .container {
+        padding: 2rem;
+        max-width: 900px;
+        margin: 2rem auto;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.85); 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+
+      /* Styling untuk konten di dalam main */
+      main h2 {
+          font-size: 2.5rem;
+          color: #d85a1b;
+          border-bottom: 3px solid #f16b22;
+          padding-bottom: 0.5rem;
+          margin-top: 0;
+      }
+      
+      main p, main li {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+      }
+      
+      main ul {
+        list-style-position: inside;
+        padding-left: 0;
+      }
+      
+      .content-image {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin: 1.5rem 0;
+      }
+
+      /* --- Footer --- */
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: #f16a22a7;
+        color: white;
+        margin-top: 3rem;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://sdg.swu.ac.th/images/sdg/SDG%209%20icon.png"
+          alt="Logo SDG 9"
+        />
+        <img src="img/sundaE.png" alt="Sunda" Sunda Empire Team />
+      </div>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="industri.html">Industri</a></li>
+        <li><a href="inovasi.html">Inovasi</a></li>
+        <li><a href="infrastruktur.html" class="active">Infrastruktur</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <main>
+        <h2>Pilar Infrastruktur: Membangun Fondasi yang Kuat dan Merata</h2>
+        
+        <p>Infrastruktur yang andal adalah tulang punggung masyarakat modern. Ini mencakup tidak hanya infrastruktur fisik seperti jalan, jembatan, dan pelabuhan, tetapi juga infrastruktur digital, energi, dan air. SDG 9 bertujuan untuk membangun infrastruktur berkualitas, andal, berkelanjutan, dan tangguh untuk semua.</p>
+
+        <img src="https://images.unsplash.com/photo-1593348530831-31a8a2d15512?q=80&w=1974&auto=format&fit=crop" alt="Pembangunan Infrastruktur Jalan dan Jembatan" class="content-image">
+
+        <h3>Target Utama Pilar Infrastruktur:</h3>
+        <ul>
+            <li><strong>Akses Universal:</strong> Memastikan semua orang memiliki akses yang adil dan terjangkau terhadap infrastruktur dasar, termasuk transportasi, sanitasi, dan energi.</li>
+            <li><strong>Infrastruktur Berkualitas:</strong> Membangun infrastruktur yang tahan terhadap bencana alam dan perubahan iklim untuk mendukung aktivitas ekonomi dan kesejahteraan manusia.</li>
+            <li><strong>Dukungan Lintas Batas:</strong> Memfasilitasi pembangunan infrastruktur di negara-negara berkembang melalui dukungan finansial, teknologi, dan teknis dari komunitas internasional.</li>
+            <li><strong>Pembangunan Berkelanjutan:</strong> Mendorong pembangunan infrastruktur yang ramah lingkungan, seperti transportasi publik dan energi terbarukan.</li>
+        </ul>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 | Informasi SDG 9</p>
+    </footer>
+</body>
+</html>
