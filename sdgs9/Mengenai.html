@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Industri</title>
+    <style>
+      /* --- Global & Body Styles --- */
+      body {
+        width: 100%;
+        min-height: 100vh;
+        font-family: Verdana, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* Pseudo-element untuk gambar latar belakang blur */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/bcan.png); /* Menggunakan gambar yang sama untuk konsistensi */
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px);
+        z-index: -1;
+      }
+
+      /* --- Navigation Bar (Sticky) --- */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #f16b22;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+      }
+
+      nav .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      nav .logo img {
+        width: 50px;
+        height: auto;
+      }
+
+      nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+        border-radius: 5px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        transform: translateY(-3px);
+      }
+      
+
+      /* --- Main Content Container --- */
+      .container {
+        padding: 2rem;
+        max-width: 900px;
+        margin: 2rem auto;
+        border-radius: 10px;
+        /* Menambahkan latar belakang agar teks lebih mudah dibaca di atas gambar blur */
+        background-color: rgba(255, 255, 255, 0.85); 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+
+      /* Styling untuk konten di dalam main */
+      main h2 {
+          font-size: 2.5rem;
+          color: #d85a1b;
+          border-bottom: 3px solid #f16b22;
+          padding-bottom: 0.5rem;
+          margin-top: 0;
+      }
+      
+      main p, main li {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+      }
+      
+      .content-image {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin: 1.5rem 0;
+      }
+
+      /* --- Footer --- */
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: #f16a22a7;
+        color: white;
+        margin-top: 3rem;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://sdg.swu.ac.th/images/sdg/SDG%209%20icon.png"
+          alt="Logo SDG 9"
+        />
+        <img src="img/sundaE.png" alt="Sunda" />
+      </div>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Mengenai.html" class="active">Mengenai</a></li>
+        <li><a href="Profil.html">Profil</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <main>
+        <h2>Pilar Industri: Menuju Industrialisasi Inklusif</h2>
+        <p>
+          Industrialisasi adalah kunci untuk pertumbuhan ekonomi, penciptaan lapangan kerja, dan peningkatan kesejahteraan. Namun, untuk mencapai pembangunan berkelanjutan, proses ini harus bersifat inklusif—memberi kesempatan yang sama bagi semua—dan ramah lingkungan.
+        </p>
+        
+        <img src="img/industri.jpg" alt="Pabrik Modern dan Berkelanjutan" class="content-image">
+
+        <h3>Fokus Utama Pengembangan Industri Berkelanjutan:</h3>
+        <ul>
+            <li>
+                <strong>Modernisasi Teknologi:</strong> Mengadopsi teknologi bersih dan proses industri yang lebih efisien untuk mengurangi jejak karbon dan limbah.
+            </li>
+            <li>
+                <strong>Dukungan Industri Kecil & Menengah (IKM):</strong> Mempermudah akses IKM ke layanan keuangan, teknologi, dan pasar global agar dapat bersaing dan berkembang.
+            </li>
+            <li>
+                <strong>Peningkatan Nilai Tambah:</strong> Mendorong pengolahan sumber daya alam di dalam negeri untuk meningkatkan nilai jual produk dan menciptakan lebih banyak lapangan kerja.
+            </li>
+            <li>
+                <strong>Konektivitas Rantai Pasok:</strong> Membangun infrastruktur yang andal untuk memastikan kelancaran distribusi bahan baku dan produk jadi.
+            </li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="container">
+      <main>
+        <h2>Pilar Inovasi: Mendorong Kemajuan Melalui Teknologi</h2>
+        
+        <p>Inovasi dan kemajuan teknologi adalah kunci untuk menemukan solusi atas berbagai tantangan ekonomi dan lingkungan. SDG 9 mendorong peningkatan investasi dalam penelitian ilmiah dan pengembangan teknologi untuk menciptakan solusi yang lebih baik bagi masyarakat.</p>
+
+        <img src="img/inovasi.webp" alt="Inovasi Teknologi dan Pengembangan" class="content-image">
+
+        <h3>Target Utama Pilar Inovasi:</h3>
+        <ul>
+            <li><strong>Meningkatkan Penelitian & Pengembangan (R&D):</strong> Mendorong sektor publik dan swasta untuk berinvestasi lebih banyak dalam R&D serta meningkatkan jumlah peneliti per kapita.</li>
+            <li><strong>Akses Teknologi:</strong> Memfasilitasi akses terhadap teknologi informasi dan komunikasi, serta menyediakan akses internet yang terjangkau bagi semua orang, terutama di negara berkembang.</li>
+            <li><strong>Dukungan Teknologi Domestik:</strong> Mendukung pengembangan teknologi, riset, dan inovasi di dalam negeri untuk mendorong diversifikasi industri dan menciptakan produk dengan nilai tambah tinggi.</li>
+            <li><strong>Mendorong Kreativitas:</strong> Menciptakan ekosistem yang mendukung lahirnya startup teknologi dan ide-ide kreatif yang dapat diubah menjadi solusi nyata.</li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="container">
+      <main>
+        <h2>Pilar Infrastruktur: Membangun Fondasi yang Kuat dan Merata</h2>
+        
+        <p>Infrastruktur yang andal adalah tulang punggung masyarakat modern. Ini mencakup tidak hanya infrastruktur fisik seperti jalan, jembatan, dan pelabuhan, tetapi juga infrastruktur digital, energi, dan air. SDG 9 bertujuan untuk membangun infrastruktur berkualitas, andal, berkelanjutan, dan tangguh untuk semua.</p>
+
+        <img src="img/infrastruktur.jpg" alt="Pembangunan Infrastruktur Jalan dan Jembatan" class="content-image">
+
+        <h3>Target Utama Pilar Infrastruktur:</h3>
+        <ul>
+            <li><strong>Akses Universal:</strong> Memastikan semua orang memiliki akses yang adil dan terjangkau terhadap infrastruktur dasar, termasuk transportasi, sanitasi, dan energi.</li>
+            <li><strong>Infrastruktur Berkualitas:</strong> Membangun infrastruktur yang tahan terhadap bencana alam dan perubahan iklim untuk mendukung aktivitas ekonomi dan kesejahteraan manusia.</li>
+            <li><strong>Dukungan Lintas Batas:</strong> Memfasilitasi pembangunan infrastruktur di negara-negara berkembang melalui dukungan finansial, teknologi, dan teknis dari komunitas internasional.</li>
+            <li><strong>Pembangunan Berkelanjutan:</strong> Mendorong pembangunan infrastruktur yang ramah lingkungan, seperti transportasi publik dan energi terbarukan.</li>
+        </ul>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 | Informasi SDG 9</p>
+    </footer>
+</body>
+</html>
