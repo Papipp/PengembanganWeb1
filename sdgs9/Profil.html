@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Tim - SDG 9</title>
+    <style>
+      /* --- Global & Body Styles --- */
+      body {
+        width: 100%;
+        min-height: 100vh;
+        font-family: Verdana, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      /* Pseudo-element untuk gambar latar belakang blur */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/bcan.png);
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px);
+        z-index: -1;
+      }
+
+      /* --- Navigation Bar (Sticky) --- */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #f16b22;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+      }
+
+      nav .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      nav .logo img {
+        width: 50px;
+        height: auto;
+      }
+
+      nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+        border-radius: 5px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      nav a:hover {
+        transform: translateY(-3px);
+      }
+      
+      nav a.active {
+        background-color: #d85a1b;
+      }
+
+      /* --- Main Content Container --- */
+      .container {
+        padding: 2rem;
+        max-width: 900px;
+        margin: 2rem auto;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.85); 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      }
+
+      main h2 {
+          font-size: 2.5rem;
+          color: #d85a1b;
+          border-bottom: 3px solid #f16b22;
+          padding-bottom: 0.5rem;
+          margin-top: 0;
+          text-align: center;
+      }
+      
+      /* --- Styling untuk Halaman Profil Tim --- */
+      .team-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem; /* Jarak antar kartu profil */
+        margin-top: 2rem;
+      }
+
+      .team-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        width: 200px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      
+      .team-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .team-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%; /* Membuat gambar menjadi bulat */
+        object-fit: cover; /* Memastikan gambar tidak gepeng */
+        border: 4px solid #f16b22;
+        margin-bottom: 1rem;
+      }
+
+      .team-card .nama {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin: 0.5rem 0;
+      }
+      
+      .team-card .nim {
+        font-size: 1rem;
+        color: #666;
+        margin: 0;
+      }
+
+      /* --- Footer --- */
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: #f16a22a7;
+        color: white;
+        margin-top: 3rem;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img src="https://sdg.swu.ac.th/images/sdg/SDG%209%20icon.png" alt="Logo SDG 9" />
+        <img src="img/sundaE.png" alt="Sunda" />
+      </div>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Mengenai.html">Mengenai</a></li>
+        <li><a href="Profil.html">Profil</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Tim Pengembang</h2>
+
+            <div class="team-container">
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/150" alt="Papip">
+                    <h3 class="nama">Apip Akmalul Iman</h3>
+                    <p class="nim">242104014</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/150" alt="Handi">
+                    <h3 class="nama">Handi Azis</h3>
+                    <p class="nim">242104019</p>
+                </div>
+                <div class="team-card">
+                    <img src="img/Rafif.jpg" alt="Rafif">
+                    <h3 class="nama">Muhammad Rafif Atallah</h3>
+                    <p class="nim">242104020</p>
+                </div>
+                <div class="team-card">
+                    <img src="img/Respati.jpg" alt="Respatis">
+                    <h3 class="nama">Novan Banyoe Respati</h3>
+                    <p class="nim">242104009</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 | Informasi SDG 9</p>
+    </footer>
+</body>
+</html>
