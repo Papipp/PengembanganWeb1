@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Industri</title>
@@ -77,7 +77,6 @@
       nav a:hover {
         transform: translateY(-3px);
       }
-      
 
       /* --- Main Content Container --- */
       .container {
@@ -85,30 +84,62 @@
         max-width: 900px;
         margin: 2rem auto;
         border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.85); 
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       }
 
       /* Styling untuk konten di dalam main */
       main h2 {
-          font-size: 2.5rem;
-          color: #d85a1b;
-          border-bottom: 3px solid #f16b22;
-          padding-bottom: 0.5rem;
-          margin-top: 0;
+        font-size: 2.5rem;
+        color: #d85a1b;
+        border-bottom: 3px solid #f16b22;
+        padding-bottom: 0.5rem;
+        margin-top: 0;
       }
-      
-      main p, main li {
+
+      main h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-top: 2rem;
+      }
+
+      main p,
+      main li {
         font-size: 1.1rem;
         line-height: 1.7;
         color: #333;
       }
-      
+
       .content-image {
-          width: 100%;
-          height: auto;
-          border-radius: 8px;
-          margin: 1.5rem 0;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+      }
+
+      /* --- Styling untuk Tabel (DITAMBAHKAN) --- */
+      /* .table-responsive {
+        overflow-x: auto;
+        margin-top: 1rem;
+      } */
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1rem;
+      }
+
+      table th,
+      table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+      }
+
+      table thead tr {
+        background-color: #f16b22;
+        color: white;
+        font-weight: bold;
       }
 
       /* --- Footer --- */
@@ -120,8 +151,8 @@
         margin-top: 3rem;
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
       <div class="logo">
         <img
@@ -138,29 +169,44 @@
       </ul>
     </nav>
 
-    <div class="container" >
+    <div class="container">
       <main>
         <h2>Pilar Industri: Menuju Industrialisasi Inklusif</h2>
         <p>
-          Industrialisasi adalah kunci untuk pertumbuhan ekonomi, penciptaan lapangan kerja, dan peningkatan kesejahteraan. Namun, untuk mencapai pembangunan berkelanjutan, proses ini harus bersifat inklusif—memberi kesempatan yang sama bagi semua—dan ramah lingkungan.
+          Industrialisasi adalah kunci untuk pertumbuhan ekonomi, penciptaan
+          lapangan kerja, dan peningkatan kesejahteraan. Namun, untuk mencapai
+          pembangunan berkelanjutan, proses ini harus bersifat inklusif—memberi
+          kesempatan yang sama bagi semua—dan ramah lingkungan.
         </p>
-        
-        <img src="img/industri.jpg" alt="Pabrik Modern dan Berkelanjutan" class="content-image">
+
+        <img
+          src="img/industri.jpg"
+          alt="Pabrik Modern dan Berkelanjutan"
+          class="content-image"
+        />
 
         <h3>Fokus Utama Pengembangan Industri Berkelanjutan:</h3>
         <ul>
-            <li>
-                <strong>Modernisasi Teknologi:</strong> Mengadopsi teknologi bersih dan proses industri yang lebih efisien untuk mengurangi jejak karbon dan limbah.
-            </li>
-            <li>
-                <strong>Dukungan Industri Kecil & Menengah (IKM):</strong> Mempermudah akses IKM ke layanan keuangan, teknologi, dan pasar global agar dapat bersaing dan berkembang.
-            </li>
-            <li>
-                <strong>Peningkatan Nilai Tambah:</strong> Mendorong pengolahan sumber daya alam di dalam negeri untuk meningkatkan nilai jual produk dan menciptakan lebih banyak lapangan kerja.
-            </li>
-            <li>
-                <strong>Konektivitas Rantai Pasok:</strong> Membangun infrastruktur yang andal untuk memastikan kelancaran distribusi bahan baku dan produk jadi.
-            </li>
+          <li>
+            <strong>Modernisasi Teknologi:</strong> Mengadopsi teknologi bersih
+            dan proses industri yang lebih efisien untuk mengurangi jejak karbon
+            dan limbah.
+          </li>
+          <li>
+            <strong>Dukungan Industri Kecil & Menengah (IKM):</strong>
+            Mempermudah akses IKM ke layanan keuangan, teknologi, dan pasar
+            global agar dapat bersaing dan berkembang.
+          </li>
+          <li>
+            <strong>Peningkatan Nilai Tambah:</strong> Mendorong pengolahan
+            sumber daya alam di dalam negeri untuk meningkatkan nilai jual
+            produk dan menciptakan lebih banyak lapangan kerja.
+          </li>
+          <li>
+            <strong>Konektivitas Rantai Pasok:</strong> Membangun infrastruktur
+            yang andal untuk memastikan kelancaran distribusi bahan baku dan
+            produk jadi.
+          </li>
         </ul>
       </main>
     </div>
@@ -168,17 +214,43 @@
     <div class="container">
       <main>
         <h2>Pilar Inovasi: Mendorong Kemajuan Melalui Teknologi</h2>
-        
-        <p>Inovasi dan kemajuan teknologi adalah kunci untuk menemukan solusi atas berbagai tantangan ekonomi dan lingkungan. SDG 9 mendorong peningkatan investasi dalam penelitian ilmiah dan pengembangan teknologi untuk menciptakan solusi yang lebih baik bagi masyarakat.</p>
 
-        <img src="img/inovasi.webp" alt="Inovasi Teknologi dan Pengembangan" class="content-image">
+        <p>
+          Inovasi dan kemajuan teknologi adalah kunci untuk menemukan solusi
+          atas berbagai tantangan ekonomi dan lingkungan. SDG 9 mendorong
+          peningkatan investasi dalam penelitian ilmiah dan pengembangan
+          teknologi untuk menciptakan solusi yang lebih baik bagi masyarakat.
+        </p>
+
+        <img
+          src="img/inovasi.webp"
+          alt="Inovasi Teknologi dan Pengembangan"
+          class="content-image"
+        />
 
         <h3>Target Utama Pilar Inovasi:</h3>
         <ul>
-            <li><strong>Meningkatkan Penelitian & Pengembangan (R&D):</strong> Mendorong sektor publik dan swasta untuk berinvestasi lebih banyak dalam R&D serta meningkatkan jumlah peneliti per kapita.</li>
-            <li><strong>Akses Teknologi:</strong> Memfasilitasi akses terhadap teknologi informasi dan komunikasi, serta menyediakan akses internet yang terjangkau bagi semua orang, terutama di negara berkembang.</li>
-            <li><strong>Dukungan Teknologi Domestik:</strong> Mendukung pengembangan teknologi, riset, dan inovasi di dalam negeri untuk mendorong diversifikasi industri dan menciptakan produk dengan nilai tambah tinggi.</li>
-            <li><strong>Mendorong Kreativitas:</strong> Menciptakan ekosistem yang mendukung lahirnya startup teknologi dan ide-ide kreatif yang dapat diubah menjadi solusi nyata.</li>
+          <li>
+            <strong>Meningkatkan Penelitian & Pengembangan (R&D):</strong>
+            Mendorong sektor publik dan swasta untuk berinvestasi lebih banyak
+            dalam R&D serta meningkatkan jumlah peneliti per kapita.
+          </li>
+          <li>
+            <strong>Akses Teknologi:</strong> Memfasilitasi akses terhadap
+            teknologi informasi dan komunikasi, serta menyediakan akses internet
+            yang terjangkau bagi semua orang, terutama di negara berkembang.
+          </li>
+          <li>
+            <strong>Dukungan Teknologi Domestik:</strong> Mendukung pengembangan
+            teknologi, riset, dan inovasi di dalam negeri untuk mendorong
+            diversifikasi industri dan menciptakan produk dengan nilai tambah
+            tinggi.
+          </li>
+          <li>
+            <strong>Mendorong Kreativitas:</strong> Menciptakan ekosistem yang
+            mendukung lahirnya startup teknologi dan ide-ide kreatif yang dapat
+            diubah menjadi solusi nyata.
+          </li>
         </ul>
       </main>
     </div>
@@ -186,23 +258,89 @@
     <div class="container">
       <main>
         <h2>Pilar Infrastruktur: Membangun Fondasi yang Kuat dan Merata</h2>
-        
-        <p>Infrastruktur yang andal adalah tulang punggung masyarakat modern. Ini mencakup tidak hanya infrastruktur fisik seperti jalan, jembatan, dan pelabuhan, tetapi juga infrastruktur digital, energi, dan air. SDG 9 bertujuan untuk membangun infrastruktur berkualitas, andal, berkelanjutan, dan tangguh untuk semua.</p>
 
-        <img src="img/infrastruktur.jpg" alt="Pembangunan Infrastruktur Jalan dan Jembatan" class="content-image">
+        <p>
+          Infrastruktur yang andal adalah tulang punggung masyarakat modern. Ini
+          mencakup tidak hanya infrastruktur fisik seperti jalan, jembatan, dan
+          pelabuhan, tetapi juga infrastruktur digital, energi, dan air. SDG 9
+          bertujuan untuk membangun infrastruktur berkualitas, andal,
+          berkelanjutan, dan tangguh untuk semua.
+        </p>
+
+        <img
+          src="img/infrastruktur.jpg"
+          alt="Pembangunan Infrastruktur Jalan dan Jembatan"
+          class="content-image"
+        />
 
         <h3>Target Utama Pilar Infrastruktur:</h3>
         <ul>
-            <li><strong>Akses Universal:</strong> Memastikan semua orang memiliki akses yang adil dan terjangkau terhadap infrastruktur dasar, termasuk transportasi, sanitasi, dan energi.</li>
-            <li><strong>Infrastruktur Berkualitas:</strong> Membangun infrastruktur yang tahan terhadap bencana alam dan perubahan iklim untuk mendukung aktivitas ekonomi dan kesejahteraan manusia.</li>
-            <li><strong>Dukungan Lintas Batas:</strong> Memfasilitasi pembangunan infrastruktur di negara-negara berkembang melalui dukungan finansial, teknologi, dan teknis dari komunitas internasional.</li>
-            <li><strong>Pembangunan Berkelanjutan:</strong> Mendorong pembangunan infrastruktur yang ramah lingkungan, seperti transportasi publik dan energi terbarukan.</li>
+          <li>
+            <strong>Akses Universal:</strong> Memastikan semua orang memiliki
+            akses yang adil dan terjangkau terhadap infrastruktur dasar,
+            termasuk transportasi, sanitasi, dan energi.
+          </li>
+          <li>
+            <strong>Infrastruktur Berkualitas:</strong> Membangun infrastruktur
+            yang tahan terhadap bencana alam dan perubahan iklim untuk mendukung
+            aktivitas ekonomi dan kesejahteraan manusia.
+          </li>
+          <li>
+            <strong>Dukungan Lintas Batas:</strong> Memfasilitasi pembangunan
+            infrastruktur di negara-negara berkembang melalui dukungan
+            finansial, teknologi, dan teknis dari komunitas internasional.
+          </li>
+          <li>
+            <strong>Pembangunan Berkelanjutan:</strong> Mendorong pembangunan
+            infrastruktur yang ramah lingkungan, seperti transportasi publik dan
+            energi terbarukan.
+          </li>
         </ul>
+
+        <h3>Data Cakupan Infrastruktur Nasional</h3>
+        <p>
+          Tabel berikut menunjukkan beberapa data penting terkait capaian
+          infrastruktur nasional sebagai bagian dari implementasi SDG 9.
+        </p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Jenis Infrastruktur</th>
+                <th>Cakupan Nasional</th>
+                <th>Target 2030</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Akses Internet Broadband</td>
+                <td>78% Populasi</td>
+                <td>95% Populasi</td>
+              </tr>
+              <tr>
+                <td>Jalan Tol Beroperasi</td>
+                <td>2.800 KM</td>
+                <td>5.000 KM</td>
+              </tr>
+              <tr>
+                <td>Akses Air Bersih Layak</td>
+                <td>91% Rumah Tangga</td>
+                <td>100% Rumah Tangga</td>
+              </tr>
+              <tr>
+                <td>Elektrifikasi Nasional</td>
+                <td>99.5% Rumah Tangga</td>
+                <td>100% Rumah Tangga</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </main>
     </div>
 
     <footer>
       <p>&copy; 2025 | Sunda Empire Team</p>
     </footer>
-</body>
+  </body>
 </html>
